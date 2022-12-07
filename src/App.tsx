@@ -5,6 +5,7 @@ import Login from './components/login.component';
 import SignUp from './components/signup.component';
 import Reset from './components/reset.component';
 import { useState, useEffect, useRef } from "react";
+import { timeStamp } from 'console';
 
 
 function App() {
@@ -29,9 +30,9 @@ function App() {
     console.log(data.data)
     console.log(JSON.parse(data.data))
     if (time && time.current) {
-      time.current.innerText = JSON.parse(data.data).dt
-
-
+      const timestamp = time.current.innerText = JSON.parse(data.data).dt
+      const dateformat = new Date(timestamp);
+      console.log(dateformat.toDateString())
     }
 
     ws.onmessage = function incoming(data) {
