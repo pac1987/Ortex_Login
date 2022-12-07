@@ -5,8 +5,6 @@ import Login from './components/login.component';
 import SignUp from './components/signup.component';
 import Reset from './components/reset.component';
 import { useState, useEffect, useRef } from "react";
-import { timeStamp } from 'console';
-
 
 function App() {
 
