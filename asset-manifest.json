@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Ortex_Login/static/css/main.94e32654.css",
-    "main.js": "/Ortex_Login/static/js/main.33ad7de5.js",
+    "main.js": "/Ortex_Login/static/js/main.81299adb.js",
     "static/js/787.3e128b3f.chunk.js": "/Ortex_Login/static/js/787.3e128b3f.chunk.js",
     "index.html": "/Ortex_Login/index.html",
     "main.94e32654.css.map": "/Ortex_Login/static/css/main.94e32654.css.map",
-    "main.33ad7de5.js.map": "/Ortex_Login/static/js/main.33ad7de5.js.map",
+    "main.81299adb.js.map": "/Ortex_Login/static/js/main.81299adb.js.map",
     "787.3e128b3f.chunk.js.map": "/Ortex_Login/static/js/787.3e128b3f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.94e32654.css",
-    "static/js/main.33ad7de5.js"
+    "static/js/main.81299adb.js"
   ]
 }
