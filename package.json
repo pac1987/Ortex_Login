@@ -59,6 +59,7 @@
     ]
   },
   "devDependencies": {
-    "@types/websocket": "^1.0.5"
+    "@types/websocket": "^1.0.5",
+    "gh-pages": "^4.0.0"
   }
 }
