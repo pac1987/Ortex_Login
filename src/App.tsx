@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Login from './components/login.component';
 import SignUp from './components/signup.component';
 import Reset from './components/reset.component';
-import { useState, useEffect, useRef } from "react";
+import { useRef } from "react";
 
 function App() {
 
-  const ref = useRef<any>();
+  // const ref = useRef<any>();
   const time = useRef<any>();
   const price = useRef<any>();
   const ws = new WebSocket('wss://stream.tradingeconomics.com/?client=guest:guest');
