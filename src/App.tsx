@@ -13,7 +13,7 @@ function App() {
   const ref = useRef<any>();
   const time = useRef<any>();
   const price = useRef<any>();
-  const ws = new WebSocket('ws://stream.tradingeconomics.com/?client=guest:guest');
+  const ws = new WebSocket('wss://stream.tradingeconomics.com/?client=guest:guest');
 
   ws.onopen = function open(event) {
     console.log('connected');
