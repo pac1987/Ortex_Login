@@ -39,7 +39,6 @@ function App() {
       console.log(JSON.parse(data.data))
       if (price && price.current) {
         price.current.innerText = JSON.parse(data.data).price
-
       }
     }
   };
@@ -76,7 +75,6 @@ function App() {
 
         <div className="auth-wrapper">
           <div className="auth-inner">
-
             <Routes>
               <Route path="/" element={<Login />} />
               <Route path="/sign-in" element={<Login />} />
