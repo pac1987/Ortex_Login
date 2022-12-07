@@ -8,10 +8,10 @@ import { useRef } from "react";
 
 function App() {
 
-  // const ref = useRef<any>();
+  const ws = new WebSocket('wss://stream.tradingeconomics.com/?client=guest:guest');
   const time = useRef<any>();
   const price = useRef<any>();
-  const ws = new WebSocket('wss://stream.tradingeconomics.com/?client=guest:guest');
+
 
   ws.onopen = function open(event) {
     console.log('connected');
@@ -42,7 +42,6 @@ function App() {
 
       }
     }
-
   };
 
   return (
@@ -53,9 +52,7 @@ function App() {
             <Link className="navbar-brand" to={'/sign-in'}>
               Ortex
             </Link>
-            <div id="sse">
-
-            </div>
+            <div id="sse">            </div>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
@@ -86,8 +83,6 @@ function App() {
               <Route path="/sign-up" element={<SignUp />} />
               <Route path="/reset" element={<Reset />} />
             </Routes>
-
-
           </div>
         </div>
       </div>
