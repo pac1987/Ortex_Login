@@ -28,9 +28,10 @@ function App() {
     console.log(data.data)
     console.log(JSON.parse(data.data))
     if (time && time.current) {
-      const timestamp = time.current.innerText = JSON.parse(data.data).dt
-      const dateformat = new Date(timestamp);
-      console.log(dateformat.toDateString())
+      time.current.innerText = JSON.parse(data.data).dt
+      const dateformat = new Date();
+      dateformat.toDateString()
+      console.log(dateformat)
     }
 
     ws.onmessage = function incoming(data) {
@@ -38,7 +39,7 @@ function App() {
       console.log(data.data)
       console.log(JSON.parse(data.data))
       if (price && price.current) {
-        price.current.innerText = JSON.parse(data.data).price
+        price.current.innerText = JSON.parse(data.data).price;
       }
     }
   };
@@ -72,6 +73,7 @@ function App() {
         </div>
         <div ref={price} style={{ position: "absolute", top: 30, right: 0, zIndex: 5000, border: "1px solid red", backgroundColor: "red" }}>
         </div>
+
 
         <div className="auth-wrapper">
           <div className="auth-inner">
